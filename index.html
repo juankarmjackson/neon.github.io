@@ -148,26 +148,54 @@
                     <p>Tiempo de Entrega: 2 - 3 días</p>
                 </div>
                 <div class="cantidad">
-                    <div class="pack">
+                    <div class="pack" id="pack1">
                         <p>Pack ONE</p>
                         <div class="unidad">
                             <img src="img/bitcoin2.png">
                             <span>1 Unidad por 29,99€</span>
                         </div>
+                        <script async
+                        src="https://js.stripe.com/v3/buy-button.js">
+                        </script>
+
+                        <stripe-buy-button
+                        buy-button-id="buy_btn_1MfjmWBElJap7B2LB3xSplOd"
+                        publishable-key="pk_live_51M9S5DBElJap7B2LOqO3gSkKbkgH0Lo0hez20vDWcpoL8IqqXhzvKXkbe3o5co1F9NR4c3ZrprPysIED3qMRNPvM009v0emWMC"
+                        >
+                        </stripe-buy-button>
                     </div>
-                    <div class="pack">
+                    <div class="pack" id="pack2">
                         <p>Pack REGALO</p>
                         <div class="unidad">
                             <img src="img/bitcoin2.png">
                             <span>2 Unidades por 39,99€</span>
                         </div>
+                        <script async
+                        src="https://js.stripe.com/v3/buy-button.js">
+                        </script>
+
+                        <stripe-buy-button
+                        buy-button-id="buy_btn_1MfjssBElJap7B2LMwti4SOU"
+                        publishable-key="pk_live_51M9S5DBElJap7B2LOqO3gSkKbkgH0Lo0hez20vDWcpoL8IqqXhzvKXkbe3o5co1F9NR4c3ZrprPysIED3qMRNPvM009v0emWMC"
+                        >
+                        </stripe-buy-button>
                     </div>
-                    <div class="pack">
+                    <div class="pack" id="pack3">
                         <p>Pack GENEROSO</p>
                         <div class="unidad">
                             <img src="img/bitcoin2.png"><span>3 Unidad por 59,99€</span>
                         </div>
+                        <script async
+                    src="https://js.stripe.com/v3/buy-button.js">
+                    </script>
+
+                    <stripe-buy-button
+                    buy-button-id="buy_btn_1MfjuiBElJap7B2LAuLwvMCs"
+                    publishable-key="pk_live_51M9S5DBElJap7B2LOqO3gSkKbkgH0Lo0hez20vDWcpoL8IqqXhzvKXkbe3o5co1F9NR4c3ZrprPysIED3qMRNPvM009v0emWMC"
+                    >
+                    </stripe-buy-button>
                     </div>
+                    
                 </div>
                 <div class="garantias">
                     <ul>
@@ -308,6 +336,15 @@
         gracias.style.display = "block";
   })
 
+
+  const pack1 = document.getElementById('pack1');
+  const pack2 = document.getElementById('pack2');
+  const pack3 = document.getElementById('pack3');
+
+
+//   pack1.addEventListener('click', function(){
+//     window.location.assign("https://buy.stripe.com/cN28zi6vg0SneJO144")
+//   });
  
 </script>
 </body>
